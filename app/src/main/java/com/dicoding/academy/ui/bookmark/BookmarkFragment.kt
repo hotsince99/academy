@@ -1,10 +1,10 @@
-package com.dicoding.academy.reader.list
+package com.dicoding.academy.ui.bookmark
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.dicoding.academy.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ModuleListFragment.newInstance] factory method to
+ * Use the [BookmarkFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ModuleListFragment : Fragment() {
+class BookmarkFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +35,7 @@ class ModuleListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_module_list, container, false)
+        return inflater.inflate(R.layout.fragment_bookmark, container, false)
     }
 
     companion object {
@@ -45,12 +45,12 @@ class ModuleListFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ModuleListFragment.
+         * @return A new instance of fragment BookmarkFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ModuleListFragment().apply {
+            BookmarkFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

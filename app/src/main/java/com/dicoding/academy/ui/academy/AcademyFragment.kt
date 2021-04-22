@@ -1,4 +1,4 @@
-package com.dicoding.academy.academy
+package com.dicoding.academy.ui.academy
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
